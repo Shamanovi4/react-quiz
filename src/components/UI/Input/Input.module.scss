@@ -1,0 +1,160 @@
+.inputItem {
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+	align-items: center;
+
+	&--auth {
+		margin-bottom: 16px;
+
+		&:last-child {
+			margin: 0;
+		}
+	}
+}
+
+.optionContent {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	width: 100%;
+}
+
+.optionIcon {
+	margin-right: 8px;
+	font-size: 24px;
+	color: #cdcdcd;
+}
+
+.optionAnswerIcon {
+	margin-right: 8px;
+	font-size: 24px;
+	color: #6432C8;
+}
+
+.inputWrapper {
+	width: 100%;
+	position: relative;
+
+	&::before, &::after {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: 1px;
+		z-index: 1;
+		width: 0;
+		height: 2px;
+		background: #6432C8;
+		transition: width .25s ease-in-out;
+	}
+
+	&.validationError::before, &.validationError::after {
+		background: #fa9600;
+	}
+
+	&::before {
+		left: 50%;
+	}
+
+	&::after {
+		right: 50%;
+	}
+
+	&.active::before {
+		width: 50%;
+	}
+
+	&.active::after {
+		width: 50%;
+	}
+}
+	
+.input {
+	margin: 0;
+	width: 100%;
+	outline: none;
+	border: 0;
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	color: #000;
+	
+	&::placeholder {
+		color: #000;
+	}
+
+	&.question {
+		min-height: 32px;
+		font-size: 16px;
+		padding-bottom: 8px;
+		
+		&.active {
+			min-height: 56px;
+			padding: 16px;
+			background: #fafafa;
+			border-radius: 4px 4px 0 0;
+			border-bottom: 1px solid #6432c8;
+
+			&:hover {
+				background: #f5f5f5;
+			}
+		}
+	}
+
+	&.option {
+		min-height: 48px;
+		padding: 8px 16px;
+
+		&.active:hover {
+			border-bottom: 1px solid #e6e6e6;
+		}	
+	}
+
+	&.addOption {
+		min-height: 48px;
+		padding: 8px 16px;
+		color: #969696;
+
+		&:hover {
+			border-bottom: 1px solid #e6e6e6;
+		}	
+	}
+
+	&.heading {
+		min-height: 48px;
+		padding-bottom: 8px;
+		font-size: 32px;
+		
+		&.active {
+			border-bottom: 1px solid #e6e6e6;
+		}
+	}
+
+	&.auth {
+		min-height: 48px;
+		padding: 8px 16px;
+		background: #fafafa;
+		border-radius: 4px 4px 0 0;
+		border-bottom: 1px solid #6432c8;
+
+		&.active:hover {
+			background: #f5f5f5;
+		}
+		
+		&.validationError {
+			border-bottom: 1px solid #fa9600;
+		}
+	}
+}
+
+.optionControls {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+}
+
+.validationErrorMessage {
+	padding: 4px 8px;
+	font-size: 12px;
+	font-family: 'Roboto', sans-serif;
+	color: #fa9600;
+}

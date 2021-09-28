@@ -1,0 +1,42 @@
+.quizList {
+  display: flex;
+	justify-content: center;
+	padding-bottom: 64px;
+	flex-grow: 1;
+	width: 100%;
+	background: rgba(#6432c8, .1);
+
+	&Inner {
+		width: 100%;
+		max-width: 768px;
+		padding: 0 20px;
+	}
+
+	ul {
+		width: 100%;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			a {
+				display: flex;
+				align-items: center;
+				height: 48px;
+				padding: 12px;
+				font-size: 20px;
+				color: #000;
+				font-family: 'Roboto', sans-serif;
+				text-decoration: none;
+	
+				&:hover {
+					color: #6432c8;
+				}
+
+				&:active {
+					background: rgba(#6432c8, 0.1);
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,56 @@
+.roundButton {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	margin: 4px;
+	padding: 8px;
+	border-radius: 50%;
+	border: 0;
+	background: transparent;
+	font-size: 24px;
+	color: #646464;
+
+	&.validationError {
+		color: #fa9600;
+
+		&:hover {
+			background: transparent;
+		}
+	
+		&:active {
+			background: transparent;
+		}
+	}
+
+	&:hover {
+		background: #fafafa;
+	}
+
+	&:active {
+		background: #f0f0f0;
+	}
+
+	&.active {
+		color: #6432C8;
+	}
+
+	.tooltip {
+		position: absolute;
+		bottom: -16px;
+		z-index: 1;
+		width: max-content;
+		border-radius: 2px;
+		padding: 4px 8px;
+		text-align: center;	
+		background: rgba(#000, .5);
+		color: #fff;
+		font-size: 10px;
+		font-family: 'Roboto', sans-serif;
+		opacity: 0;
+	}
+
+	&:hover .tooltip {
+		opacity: 1;
+	}
+}
