@@ -24,9 +24,9 @@
 				align-items: center;
 				height: 48px;
 				padding: 12px;
-				font-size: 20px;
+				font-size: 16px;
 				color: #000;
-				font-family: 'Roboto', sans-serif;
+				font-family: 'Open Sans', sans-serif;
 				text-decoration: none;
 	
 				&:hover {
@@ -39,4 +39,18 @@
 			}
 		}
 	}
+}
+
+@media (max-width: 414px) {
+  .quizList {
+    ul {
+      li {
+        a {
+          height: 36px;
+          padding: 8px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
 }

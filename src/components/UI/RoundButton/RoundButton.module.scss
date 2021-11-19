@@ -54,3 +54,9 @@
 		opacity: 1;
 	}
 }
+
+@media (max-width: 414px) {
+  .roundButton {
+    font-size: 18px;
+  }
+}

@@ -10,14 +10,14 @@
 		&Item {
 			display: flex;
 			align-items: center;
+      height: 48px;
 
 			.link {
-				height: 48px;
 				padding: 12px;
 				font-size: 14px;
 				font-weight: 500;
 				color: #000;
-				font-family: 'Roboto', sans-serif;
+				font-family: 'Open Sans', sans-serif;
 				text-decoration: none;
 
 				&:hover {
@@ -30,4 +30,17 @@
 			}
 		}
 	}
+}
+
+@media (max-width: 414px) {
+  .navigation {
+    &Group {
+      &Item {
+        .link {
+          padding: 8px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
 }

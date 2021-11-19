@@ -83,12 +83,13 @@
 	}
 
 	&.question {
-		min-height: 32px;
+		height: 32px;
 		font-size: 16px;
 		padding-bottom: 8px;
+    font-family: 'Open Sans', sans-serif;
 		
 		&.active {
-			min-height: 56px;
+			height: 56px;
 			padding: 16px;
 			background: #fafafa;
 			border-radius: 4px 4px 0 0;
@@ -101,7 +102,7 @@
 	}
 
 	&.option {
-		min-height: 48px;
+		height: 48px;
 		padding: 8px 16px;
 
 		&.active:hover {
@@ -110,7 +111,7 @@
 	}
 
 	&.addOption {
-		min-height: 48px;
+		height: 48px;
 		padding: 8px 16px;
 		color: #969696;
 
@@ -120,17 +121,18 @@
 	}
 
 	&.heading {
-		min-height: 48px;
+		height: 48px;
 		padding-bottom: 8px;
 		font-size: 32px;
-		
+		font-family: 'Open Sans', sans-serif;
+
 		&.active {
 			border-bottom: 1px solid #e6e6e6;
 		}
 	}
 
 	&.auth {
-		min-height: 48px;
+		height: 48px;
 		padding: 8px 16px;
 		background: #fafafa;
 		border-radius: 4px 4px 0 0;
@@ -157,4 +159,54 @@
 	font-size: 12px;
 	font-family: 'Roboto', sans-serif;
 	color: #fa9600;
+}
+
+@media (max-width: 414px) {
+  .optionIcon {
+    margin-right: 4px;
+    font-size: 18px;
+    color: #cdcdcd;
+  }
+  
+  .optionAnswerIcon {
+    margin-right: 4px;
+    font-size: 18px;
+    color: #6432C8;
+  }
+
+  .input {
+    &.auth {
+      height: 36px;
+		  padding: 4px 8px;
+      font-size: 12px;
+    }
+
+    &.heading {
+      height: 36px;
+      font-size: 24px;
+    }
+
+    &.question {
+      height: 24px;
+      font-size: 14px;
+      padding-bottom: 4px;
+
+      &.active {
+        height: 42px;
+        padding: 8px;
+      }
+    }
+
+    &.option {
+      height: 36px;
+		  padding: 4px 8px;
+      font-size: 12px;
+    }
+
+    &.addOption {
+      height: 36px;
+      padding: 8px;
+      font-size: 12px;
+    }
+  }
 }

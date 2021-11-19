@@ -6,3 +6,10 @@
 	font-family: 'Roboto', sans-serif;
 	color: #000;
 }
+
+@media (max-width: 414px) {
+  .quizScore {
+    height: 36px;
+    font-size: 14px;
+  }
+}
