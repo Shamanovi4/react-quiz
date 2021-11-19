@@ -34,3 +34,19 @@
 		margin-top: 8px;
 	}
 }
+
+@media (max-width: 414px) {
+  .formItem {
+    &Wrapper {
+      padding: 12px;
+    }
+
+    .controlPanel {
+      margin-top: 12px;
+    }
+    
+    .buttonsGroup {
+      margin-top: 4px;
+    }
+  }
+}

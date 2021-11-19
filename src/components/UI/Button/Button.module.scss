@@ -1,4 +1,4 @@
-.Button {
+.button {
   display: inline-flex;
 	align-items: center;
 	position: relative;
@@ -11,7 +11,7 @@
 	background: #6432c8;
   font-size: 14px;
 	font-weight: 500;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	outline: none;
 	text-decoration: none;
 
@@ -24,5 +24,12 @@
   &:active {
 		background: #8B65D6;
     box-shadow: 0 2px 8px -2px rgba(0, 0, 0, .5);
+  }
+}
+
+@media (max-width: 414px) {
+  .button {
+    padding: 0 24px;
+    font-size: 12px;
   }
 }
