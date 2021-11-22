@@ -8,7 +8,7 @@ React based SPA which allows you to create and store custom quizzes with registe
 - Displaying quiz results (amount of correct answers).
 - Authorization (only authorized users can create and view quizzes).
 
-#To Do:
+# To Do:
 - More fancy quizzes list with some control panel for deleting it and etc.
 - Ability to edit existing quizzes.
 - Drag and drop for quiz creator to change questions order.
