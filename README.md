@@ -1,5 +1,5 @@
 # React Quiz
-React based SPA which allows you to create and store custom quizzes with register and login functionality. Initial idea was to create a Google Forms clone but with less functionality. Written with the use of HTML, SCSS, JS, React, React Redux, React Router, Axios. Uses Firebase Realtime Databse to store quizzes.
+React based SPA which allows you to create and store custom quizzes with register and login functionality. Initial idea was to create a Google Forms clone but with less functionality. Written with the use of React, React Redux, React Router, Axios. Uses Firebase Realtime Databse to store quizzes.
 
 # Features
 - Creating new quizes. Changing quiz title, adding new questions with custom amount of answers, setting correct answers.
